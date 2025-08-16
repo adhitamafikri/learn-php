@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  php:
+    cmds:
+      - docker run --rm -v $(pwd):/app -w /app php:8.2-fpm php {{.CLI_ARGS}}
