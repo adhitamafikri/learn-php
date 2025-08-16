@@ -14,7 +14,7 @@ $str = 'This is a variable with a string type';
 $bool_type = true;
 $bool_type_false = false;
 echo $num . PHP_EOL;
-echo $my_money . " Using _ to group numbers is new, since PHP 7.4 ". PHP_EOL;
+echo $my_money . " Using _ to group numbers is new, since PHP 7.4 " . PHP_EOL;
 echo $floating_num . PHP_EOL;
 echo $str . PHP_EOL;
 echo $bool_type . PHP_EOL;
@@ -23,7 +23,7 @@ echo $bool_type_false . PHP_EOL;
 echo PHP_EOL . "String Interpolation" . PHP_EOL;
 $value_1 = "Combro";
 $value_2 = 25;
-echo 'Interpolation Syntax: '. 'Aku makan $value_1 sebanyak {$value_2} kali' . PHP_EOL;
+echo 'Interpolation Syntax: ' . 'Aku makan $value_1 sebanyak {$value_2} kali' . PHP_EOL;
 echo "Aku makan $value_1 sebanyak {$value_2} kali" . PHP_EOL;
 echo "Always resort to double quotes for string values, because you might need to use interpolation" . PHP_EOL;
 
@@ -92,5 +92,8 @@ echo <<<'TypeCasting'
     (string) -> String
 TypeCasting . PHP_EOL;
 
-echo PHP_EOL . " Reference: https://www.phptutorial.net/php-tutorial/php-data-types/" . PHP_EOL;
+print_r($tech_carts) . PHP_EOL;
+echo count($tech_carts) . PHP_EOL;
+print_r(count($tech_carts)) . PHP_EOL;
 
+echo PHP_EOL . " Reference: https://www.phptutorial.net/php-tutorial/php-data-types/" . PHP_EOL;
