@@ -16,4 +16,10 @@ function get_full_name()
     return $first_name . ' ' . $last_name;
 }
 
+// Single line comment
+# Single line comment with hash
+/*
+Multi line comment
+*/
+
 require 'index.view.php';
