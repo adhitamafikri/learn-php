@@ -8,6 +8,16 @@
   <body>
     <h1>PHP in a HTML file</h1>
     <p>PHP text is below:</p>
+
+    <!-- Using PHP in a HTML file -->
     <span><?php echo 'Hello, World!'; ?></span>
+
+    <!-- Defining Variables -->
+    <?php
+        $first_name = 'Adhitama';
+        $last_name = 'Fikri';
+        $full_name = $first_name . ' ' . $last_name;        
+    ?>
+    <span><?php echo $full_name; ?></span>
   </body>
 </html>
